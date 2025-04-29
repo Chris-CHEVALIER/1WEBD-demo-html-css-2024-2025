@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(red, green, blue, 0);
+  margin: 0;
+}
+
+header {
+  background-color: aquamarine;
+}
+
+.navbar {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+/* nav ul li {
+  display: inline;
+  margin-right: 20%;
+} */
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+article {
+  background-color: red;
+}
+
+section {
+  background-color: dodgerblue;
+}
+
+.justified {
+  text-align: justify;
+  border: 1px solid dodgerblue;
+  padding: 25px;
+  margin: 60px 0 120px 20px;
+}
+
+.parent {
+  width: 50%;
+  background-color: green;
+}
+
+#ronflex {
+  /* height: 60px; */
+  width: 30vh;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  /* nav ul li {
+    display: block;
+  } */
+
+  .justified {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #ronflex {
+    width: 100vw;
+  }
+
+  table {
+    width: 100%;
+  }
+}

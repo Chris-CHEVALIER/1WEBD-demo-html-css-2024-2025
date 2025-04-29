@@ -1,0 +1,52 @@
+.button {
+  background-color: #0095ff;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 2s ease-in-out, transform 1s ease;
+}
+
+.button:hover {
+  background-color: #ff3300;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 0.5s ease-in-out infinite;
+}
